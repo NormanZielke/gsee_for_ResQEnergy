@@ -1,4 +1,4 @@
-from weather import weather
+from weather import Weather
 
 
 
@@ -15,7 +15,7 @@ args = {
 
 
 if __name__ == "__main__":
-
-    weather = weather(args)
-
+    # Instantiate weather container (reads file and builds time index)
+    weather = Weather(args)
+    # Compute PV feed-in time series for all azimuth values and write CSV output
     weather.calc_pv_feed_in_ts()
