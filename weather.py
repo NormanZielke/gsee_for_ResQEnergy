@@ -4,6 +4,8 @@ from calc_results import (
     calc_pv_feed_in_ts,
 )
 
+from check_data import check_data
+
 
 class Weather:
     """
@@ -71,3 +73,5 @@ class Weather:
     # add functions
 
     calc_pv_feed_in_ts = calc_pv_feed_in_ts
+
+    check_data = check_data

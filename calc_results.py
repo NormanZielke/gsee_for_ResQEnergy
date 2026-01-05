@@ -86,7 +86,7 @@ def calc_pv_feed_in_ts(self):
             capacity=args["capacity"],  # W (i.e., 1 kWp)
         )
 
-        pv_feed_ts.name = str(azimut)
+        pv_feed_ts.name = str(azim)
         series_list.append(pv_feed_ts)
 
     df_pv_feed_in_ts = pd.concat(series_list, axis=1)

@@ -1,7 +1,5 @@
 from weather import Weather
 
-
-
 args = {
     "weather_data" : "input/try_mean_rcp85.p3.txt", # filepath of artificial or measured input weather data
     "year" : 2050,                                  # year of feed_in_timeseries
@@ -17,5 +15,9 @@ args = {
 if __name__ == "__main__":
     # Instantiate weather container (reads file and builds time index)
     weather = Weather(args)
+
+    # raw data sanity check
+    weather.check_data()
+
     # Compute PV feed-in time series for all azimuth values and write CSV output
     weather.calc_pv_feed_in_ts()
