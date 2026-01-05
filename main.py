@@ -6,7 +6,7 @@ args = {
     "coords": (52.43, 13.54),                       # coords of pv plant (52.43, 13.54) => Adlershof (Berlin)
     "tilt": 30,                                     # 30 degrees tilt angle
     "azimut" : [90,135,180,225,270],                # chosen azimut values to generate pv feed_in_timeseries [E,SE,S,SW,W]
-    "capacity" : 1,                                 # installed pv capacity
+    "capacity" : 1,                                 # installed pv capacity [W]
     "output_base_dir" : "output",                   # base output dir
 }
 
